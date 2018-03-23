@@ -6,4 +6,7 @@ class App < Sinatra::Base
     set :session_secret, "monkey"
   end
 
+  get '/' do
+    erb :index
+  end
 end
